@@ -2931,32 +2931,38 @@ class RoomSelector(QWidget):
         self.clearAll.setToolTip("Clear all filters")
         self.clearAll.setSizePolicy(QSizePolicy.Ignored, QSizePolicy.Fixed)
         self.clearAll.clicked.connect(self.clearAllFilter)
+        self.clearAll.setAutoRaise(True) 
 
         self.clearName = QToolButton()
         self.clearName.setIconSize(QSize(24, 0))
         self.clearName.setToolTip("Clear name filter")
         self.clearName.setSizePolicy(self.IDFilter.sizePolicy())
         self.clearName.clicked.connect(self.clearNameFilter)
+        self.clearName.setAutoRaise(True) 
 
         self.clearEntity = QToolButton()
         self.clearEntity.setIconSize(QSize(24, 0))
         self.clearEntity.setToolTip("Clear entity filter")
         self.clearEntity.clicked.connect(self.clearEntityFilter)
+        self.clearEntity.setAutoRaise(True) 
 
         self.clearType = QToolButton()
         self.clearType.setIconSize(QSize(24, 0))
         self.clearType.setToolTip("Clear type filter")
         self.clearType.clicked.connect(self.clearTypeFilter)
+        self.clearType.setAutoRaise(True) 
 
         self.clearExtra = QToolButton()
         self.clearExtra.setIconSize(QSize(24, 0))
         self.clearExtra.setToolTip("Clear extra filter")
         self.clearExtra.clicked.connect(self.clearExtraFilter)
+        self.clearExtra.setAutoRaise(True) 
 
         self.clearSize = QToolButton()
         self.clearSize.setIconSize(QSize(24, 0))
         self.clearSize.setToolTip("Clear size filter")
         self.clearSize.clicked.connect(self.clearSizeFilter)
+        self.clearSize.setAutoRaise(True) 
 
         self.filter.addWidget(self.clearAll, 1, 0)
         self.filter.addWidget(self.clearName, 1, 1)
